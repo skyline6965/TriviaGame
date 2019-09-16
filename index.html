@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Wars Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    
+</head>
+<body>
+    
+
+<div class="wrapper">
+
+<!-- start, quiz, results -->
+<div id="content">
+    <div id="timer">00:00</div>
+
+    <h1>Star Wars</h1>
+
+    <button id="startBtn">
+        Start Quiz
+    </button>
+
+
+    <div id="quiz">
+        <p class="question-text"></p>
+        
+        
+
+        <button id="submit" onclick="getResults()">Submit Quiz</button>
+    </div>
+
+   <div id="results">
+        <h2>Results</h2>
+    </div>
+
+</div>
+</div>
+
+<!-- video div -->
+<div id="videoDiv"> 
+    <div id="videoBlock">   
+    <video autoplay muted loop id="myVideo">
+    <source src="./assets/space.mp4" type="video/mp4"></source>
+    </video> 
+    </div>
+    </div>
+
+
+
+<script src="./assets/javascript/app.js"></script>
+</body>
+
+
+
+
+</html>
