@@ -1,46 +1,36 @@
-var startBtn = document.getElementById("startBtn");
-var results = document.getElementById("results");
-results.style.display = "none";
-var quiz = document.getElementById("quiz");
-quiz.style.display = "none";
-var questions = [{
-    Q: "What year did Star Wars: A New Hope come out?", A: "1976",
-    
-}];
+var myQuestions = [
+    {
+        question: "What year did Star Wars: A New Hope come out??",
+        answers: {
+            a: '1966',
+            b: '1977',
+            c: '1981',
+            d: '1976'
+        },
+        correctAnswer: 'b'
+    },
+    {
+        question: "Who owned the millennium falcon before Han Solo?",
+        answers: {
+            a: 'Lando Calrissian',
+            b: 'Chewbaca',
+            c: 'Luke Skywalker',
+            d: 'Gerneral Zarpedon'
+        },
+        correctAnswer: 'a'
+    },
+    {
+        question: "Who did the voice over for Darth Vader?",
+        answers: {
+            a: 'Arnold Schwarzenegger',
+            b: 'Samuel L. Jackson',
+            c: 'James Earl Jones',
+            d: 'Luther Vandross'
+        },
+        correctAnswer: 'c'
+    }
+];
 
-var correct = 0;
-
-
-
-
-function startQuiz() {
-    startBtn.style.display = "none";
-    quiz.style.display = "block";
-}
-
-
-function getResults() {
-    quiz.style.display = "none";
-    results.style.display = "block";
-}
-
-// *****************************************************************************************
-var startButton = document.getElementById('startBtn')
-
-startButton.addEventListener('click', startGame)
-
-function startGame(){
-    console.log("started");
-    
-    console.log(questions);
-}
-
-
-function setNextQuestions(){
-
-}
-
-
-function selectAnswer(){
-
-}
+var quizContainer = document.getElementById('quiz');
+var resultsContainer = document.getElementById('results');
+var submitButton = document.getElementById('submit');
