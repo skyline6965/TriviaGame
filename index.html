@@ -13,16 +13,75 @@
 
 <body>
 
-    <header>
-        <h1>Star Wars Trivia Game</h1>
-    </header>
-
-
     <div class="wrapper">
-        <div id=quiz></div>
-        <button id="submit"></button>
-        <div id="results"></div>
 
+        <!-- start, quiz, results -->
+        <div id="content">
+            <div id="show-number">
+                <p>120</p>
+            </div>
+
+            <h1>Star Wars</h1>
+
+            <div id="introBtn">
+                <button id="startBtn" onclick="startQuiz()">
+                    Start Quiz
+                </button>
+            </div>
+
+
+            <div id="quiz">
+                <div class="quesion">
+                    <h2>What year did Star Wars: A New Hope come out?</h2>
+                    <input type="radio" name="q0" value="a">1977
+                    <input type="radio" name="q0" value="b">1967
+                    <input type="radio" name="q0" value="c">1976
+                    <input type="radio" name="q0" value="d">1981
+                </div>
+
+                <div class="quesion">
+                    <h2>Who owned the millennium falcon before Han Solo?</h2>
+                    <input type="radio" name="q1" value="a">Chewbacca
+                    <input type="radio" name="q1" value="b">Lando Calrissian
+                    <input type="radio" name="q1" value="c">Luke Skywalker
+                    <input type="radio" name="q1" value="d">General T. Zarpedon
+                </div>
+
+                <div class="quesion">
+                    <h2>Who did the voice over for Darth Vader?</h2>
+                    <input type="radio" name="q2" value="a">Arnold Schwarzenegger
+                    <input type="radio" name="q2" value="b">Samuel L. Jackson
+                    <input type="radio" name="q2" value="c">James Earl Jones
+                    <input type="radio" name="q2" value="d">Morgan Freeman
+                </div>
+
+                <div class="quesion">
+                    <h2>Who killed Darth Vader?</h2>
+                    <input type="radio" name="q3" value="a">Luke Skywalker
+                    <input type="radio" name="q3" value="b">Darth Sidious
+                    <input type="radio" name="q3" value="c">Obi-wan Kenobi
+                    <input type="radio" name="q3" value="d">Qui-Gon Jinn
+                </div>
+
+                <br><br>
+                <button onclick="returnScore()">Submit Quiz</button>
+            </div>
+
+
+            <div id="results">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- video div -->
+    <div id="videoDiv">
+        <div id="videoBlock">
+            <video autoplay muted loop id="myVideo">
+                <source src="./assets/space.mp4" type="video/mp4">
+                </source>
+            </video>
+        </div>
     </div>
 
 
